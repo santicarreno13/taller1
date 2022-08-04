@@ -69,22 +69,41 @@ console.log(`La suma es: ${numero+10}`);
 // }
 
 //Condicional multiple
-let num1=prompt("Dijite el primer numero");
-let num2=prompt("Diijte el segundo numero");
-let operaciones=prompt("que operacion elije?");
+let num1=parseInt(prompt("Dijite el primer numero"));
+let num2=parseInt(prompt("Diijte el segundo numero"));
+let operaciones=prompt("¿que operacion elije?");
 switch(operaciones){
  case 'suma': 
-     resultado= num1 + num2;
+     resultado= parseInt(num1) + num2;
+     window.alert(`Tu suma es: ${resultado}`)
     break;
     case 'resta':
     resultado= num1 - num2;
+    window.alert(`Tu resta es: ${resultado}`)
     break;
     case 'multiplicacion':
     resultado= num1 * num2;
+    window.alert(`Tu multiplicacion es: ${resultado}`)
     break;
     case 'divicion':
     resultado= num1 / num2;
+    window.alert(`Tu divicion es: ${resultado}`)
+    break;
+    case 'raiz1':
+    resultado= Math.sqrt(num1).toPrecision(3);
+    window.alert(`Tu raiz del primer numero es: ${resultado}`)
+    break;
+    case 'raiz2':
+        resultado= Math.sqrt(num1).toPrecision(3);
+        window.alert(`Tu raiz del primer numero es: ${resultado}`)
+        break;
+    case 'potencia':
+    resultado= Math.pow(num1,num2);
+    window.alert(`Tu potenciacion es: ${resultado}`)
     break;
     default:
-        window.alert(`no sea gei`);
+        window.alert(`no elejiste Gilipollas`);
 }
+
+console.log(`El primero es ${num1}`);
+console.log(`El segundo es ${num2}`);
