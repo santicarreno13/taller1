@@ -90,11 +90,11 @@ switch(operaciones){
     window.alert(`Tu divicion es: ${resultado}`)
     break;
     case 'raiz1':
-    resultado= Math.sqrt(num1).toPrecision(3);
+    resultado= Math.sqrt(num1).toFixed(3);
     window.alert(`Tu raiz del primer numero es: ${resultado}`)
     break;
     case 'raiz2':
-        resultado= Math.sqrt(num1).toPrecision(3);
+        resultado= Math.sqrt(num1).toFixed(3);
         window.alert(`Tu raiz del primer numero es: ${resultado}`)
         break;
     case 'potencia':
