@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Temperatura</title>
     <link rel="icon" type="image/x-icon" href="img/js.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -27,9 +27,9 @@
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Calculadora.html">Calculadora</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Elije.html">Elije la palabra</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Temperatura.html">Temperatura</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Triangulo.html">Triangulo </a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Elije.html">Elije la palabra </a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Temperatura.html">Temperatura </a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Triangulo.html">Triangulo</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Ejercicio 5</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Ejercicio 6</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Ejercicio 7</a></li>
@@ -40,27 +40,31 @@
     <div class="caja">
     <form class="form-group">
         <div class="group-from">
-            <label for="num1" class="form-label">Ingresar un numero</label>
-            <input type="number" name="form-control" id="num1">
+            <label for="grados" class="-label">Ingresar una Temperatura</label>
+            <input type="number" name="form-control" id="grados">
         </div>
         <div class="group-from">
-            <label for="num2" class="-label">Ingresar otro numero</label>
-            <input type="number" name="form-control" id="num2">
+            <label>Selecione de</label>
+            <select class="form-select" id="de">
+                <option selected>Selecione una opcion</option>
+                <option value="1">Fahrenheit</option>
+                <option value="2">Celsius</option>
+                <option value="3">Kelvin</option>
+            </select>
         </div>
         <div class="group-from">
-            <label>Selecione una operacion</label>
-            <select class="form-select" id="operacion">
-                <option selected>Selecione una operacion</option>
-                <option value="1">Suma</option>
-                <option value="2">Resta</option>
-                <option value="3">Multiplicacion</option>
-                <option value="4">Divicion</option>
+            <label>Selecione para</label>
+            <select class="form-select" id="para">
+                <option selected>Selecione una opcion</option>
+                <option value="1">Fahrenheit</option>
+                <option value="2">Celsius</option>
+                <option value="3">Kelvin</option>
             </select>
         </div>
         
         <button type="submit" class="btn-azul" onclick="calcular()">calcular</button>
     </form></div></center>
-    <script src="index js/calculadora.js"></script>
+    <script src="index js/Temperatura.js"></script>
             <!-- Bootstrap core JS-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
             <!-- Core theme JS-->

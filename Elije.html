@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Elije la palabra</title>
     <link rel="icon" type="image/x-icon" href="img/js.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -27,8 +27,8 @@
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Calculadora.html">Calculadora</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Elije.html">Elije la palabra</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Temperatura.html">Temperatura</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Elije.html">Elije la palabra </a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Temperatura.html">Temperatura </a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Triangulo.html">Triangulo </a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Ejercicio 5</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Ejercicio 6</a></li>
@@ -40,27 +40,23 @@
     <div class="caja">
     <form class="form-group">
         <div class="group-from">
-            <label for="num1" class="form-label">Ingresar un numero</label>
-            <input type="number" name="form-control" id="num1">
+            <label for="palabra" class="-label">Ingresar una palabra</label>
+            <input type="text" name="form-control" id="palabra">
         </div>
         <div class="group-from">
-            <label for="num2" class="-label">Ingresar otro numero</label>
-            <input type="number" name="form-control" id="num2">
-        </div>
-        <div class="group-from">
-            <label>Selecione una operacion</label>
-            <select class="form-select" id="operacion">
-                <option selected>Selecione una operacion</option>
-                <option value="1">Suma</option>
-                <option value="2">Resta</option>
-                <option value="3">Multiplicacion</option>
-                <option value="4">Divicion</option>
+            <label>Selecione una opcion</label>
+            <select class="form-select" id="opcion">
+                <option selected>Selecione una opcion</option>
+                <option value="1">longitud</option>
+                <option value="2">mayuscúla</option>
+                <option value="3">minuscúla</option>
+                <option value="4">la primera</option>
             </select>
         </div>
         
         <button type="submit" class="btn-azul" onclick="calcular()">calcular</button>
     </form></div></center>
-    <script src="index js/calculadora.js"></script>
+    <script src="index js/Elije.js"></script>
             <!-- Bootstrap core JS-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
             <!-- Core theme JS-->
