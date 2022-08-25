@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Triangulo</title>
+    <title>Instructores</title>
     <link rel="icon" type="image/x-icon" href="img/js.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -40,23 +40,46 @@
     <div class="caja">
     <form class="form-group">
         <div class="group-from">
-            <label for="base" class="-label">Base</label>
-            <input type="number" name="form-control" id="base">
+            <label>Selecione El Nombre</label>
+            <select class="form-select" id="nombre">
+                <option selected>Selecione el nombre</option>
+                <option value="1">Jennifer</option>
+                <option value="2">Sandra</option>
+                <option value="3">Cristian</option>
+                <option value="4">Andrea</option>
+            </select>
         </div>
-        <br>
         <div class="group-from">
-            <label for="1" class="-label">lado 1</label>
-            <input type="number" name="form-control" id="1">
+            <label>Selecione El Apellido</label>
+            <select class="form-select" id="apellido">
+                <option selected>Selecione el apellido</option>
+                <option value="1">Rueda</option>
+                <option value="2">Buitrago</option>
+                <option value="3">Rio</option>
+                <option value="4">Fajardo</option>
+            </select>
         </div>
-        <br>
         <div class="group-from">
-            <label for="2" class="-label">lado 2</label>
-            <input type="number" name="form-control" id="2">
+            <label>Selecione El Area</label>
+            <select class="form-select" id="area">
+                <option selected>Selecione el area</option>
+                <option value="1">Promover</option>
+                <option value="2">Java</option>
+                <option value="3">Php</option>
+                <option value="4">BD</option>
+            </select>
         </div>
-        
-        <button type="submit" class="btn-azul" onclick="calcular()">calcular</button>
-    </form></div></center>
-    <script src="index js/Triangulo.js"></script>
+        <div id="respuesta">
+        </div>
+        <div id="ops">
+        <button type="submit" class="btn-azul" id="calcular">calcular</button>
+        </div>
+    </div>
+    </form>
+    
+   
+</center>
+    <script src="index js/Instructores.js"></script>
             <!-- Bootstrap core JS-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
             <!-- Core theme JS-->

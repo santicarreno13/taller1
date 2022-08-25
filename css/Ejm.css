@@ -1,0 +1,16 @@
+#respuesta{
+    visibility: hidden;
+    opacity: 0;
+    display:flex;
+
+}
+.correcto{
+    visibility:visible;
+    color: chartreuse;
+    opacity: 1;
+}
+.incorrecto{
+    color: crimson;
+    visibility: visible;
+    opacity: 1;
+}
