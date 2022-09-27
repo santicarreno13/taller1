@@ -51,7 +51,7 @@
             document.getElementById(`g-${grupo}`).classList.remove("success"); 
             document.querySelector(`#g-${grupo} i`).classList.remove("fa-square-check");
             document.querySelector(`#g-${grupo} i`).classList.add("fa-bomb");
-            document.querySelector(`#g-${grupo} .msn-error`).classList.remove("msn-error-visible");
+            document.querySelector(`#g-${grupo} .msn-error`).classList.add("msn-error-visible");
         }
     }
 
@@ -111,3 +111,4 @@
             document.getElementById('form-msg').classList.add('form-msg-activo');
         }
     });
+    console.log(validarInput);
